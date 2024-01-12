@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+    max-height: 100vh;
+}
+
+
+.container{
+    position: relative;
+    margin-top: 80px;
+    width: 70vw;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #faf6d7, #d7e3cb);
+    z-index: 6;
+    transform: translateX(100%);
+    transition: 1s ease-in-out;
+}
+.signin-up{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 5;
+}
+
+.signin-upp{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 5;
+}
+.signinForm, .signupForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 238px;
+    padding: 0 10px;
+    
+}
+.signinForm{
+    left: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+.signupForm{
+    right: 0;
+    transition: 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+
+.title{
+    font-size: 35px;
+    color: #29450C;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.input-field{
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #B1A234;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.input-field i{
+    flex: 1;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+
+}
+.input-field input{
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+.btn1{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #29450C;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: #609923;
+    color: #fff;
+}
+.socialText{
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+.socialMedia{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.social-icon:hover{
+    color: #609923;
+    border-color: #609923;
+}
+.panels-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
+.panel{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    min-width: 238px;
+    padding: 0 10px;
+    text-align: center;
+    z-index: 6;
+    height: 100%;
+
+}
+.panel .left-panel{
+    left: 0;
+}
+.panel .right-panel{
+    right:0 ;
+}
+.content{
+    color: #444;
+    transition-delay: 0.4s;
+    transition-delay: 0.5s;
+}
+.panel h3{
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.panel p{
+    font-size: 15px;
+    padding: 10px 0;
+
+}
+.image{
+    width: 52%;
+    transition: 1.1s ease-in-out;
+    transition-delay: 0.4s;
+}
+.left-panel{
+    text-align: center;
+}
+
+.right-panel .image,
+.right-panel .content{
+    transform:translateX(0);
+}
+
+
+.body-bg{
+    background: linear-gradient(-45deg, #faf6d7, #d7e3cb);
+    
+}
+.body-bg a{
+    color: #29450C;
+}
+.body-bg a:hover{
+    color: #609923;
+}
+.body-bg .btn1{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #29450C;
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+}
+.body-bg .btn1:hover{
+    background-color: #609923;
+    color: #fff;
+}
+.body-bg .container1 p{
+    background-color:transparent;
+    color: #29450C;
+}
+.container1{
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.home{
+    border: rgba(255, 255, 255, 0.651) 1px solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(3px);
+    font-size: 18px;
+    color: #29450C;
+}
